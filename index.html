@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Salário Líquido</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Calculadora de Salário Líquido</h1>
+    <form id="formSalario">
+        <input type="number" id="gross-salary" placeholder="Salário Bruto" required>
+        <input type="number" id="desconto" placeholder="Descontos" required>
+        <input type="number" id="beneficios" placeholder="Benefícios" required>
+        <button type="submit">Adicionar Salário</button>
+    </form>
+    <section id="resultados">
+        <h2 id="maior-salario">Maior Salário: R$0</h2>
+        <h2 id="total-descontos">Soma dos Descontos: R$0</h2>
+    </section>
+    <section id="lista-salario">
+        <h2>Salários Líquidos Registrados</h2>
+        <ul id="lista-salarios"></ul>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
